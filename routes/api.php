@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\NumberOneController;
+use App\Http\Controllers\Api\NumberTwoController;
 
 /*
 |--------------------------------------------------------------------------
@@ -21,3 +22,4 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 
 Route::post('number_one', [NumberOneController::class, 'index']);
+Route::post('number_two', [NumberTwoController::class, 'index']);
