@@ -16,7 +16,7 @@ class NumberTwoController extends Controller
     public function index(Request $request)
     {
         try {
-            $validated = $request->validate(['number' => 'required|numeric|min:0|max:999999999999999']);
+            $validated = $request->validate(['number' => 'required|numeric|gt:0|max:999999999999999']);
             $formattedNumber = "Rp " . number_format($request->number, 0, ',', '.');
             $convertedNumber = $this->generateFormattedNumber($request->number);
             $cleanConvertedNumber = ucwords(preg_replace('/\s+/', ' ', trim($convertedNumber)) . " Rupiah");
