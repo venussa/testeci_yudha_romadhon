@@ -22,5 +22,5 @@
 - Task number 4
    - https://github.com/venussa/testeci_yudha_romadhon/commit/3cb6ea986d9792996563b376bfdaaa2ba7d0ce51
  
-## API INFO
+## API Documentation
 Postman Collection : https://github.com/venussa/testeci_yudha_romadhon/blob/develop/ECII_Postman_Collection.postman_collection.json
