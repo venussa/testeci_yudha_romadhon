@@ -1,0 +1,627 @@
+{
+	"info": {
+		"_postman_id": "df06392d-0c7f-4a36-8502-49b44685b0f7",
+		"name": "Electronic City",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "18429884",
+		"_collection_link": "https://restless-crescent-341441.postman.co/workspace/Icube-Training~e4277eb2-39ac-458d-8ffb-e09e3255d67d/collection/18429884-df06392d-0c7f-4a36-8502-49b44685b0f7?action=share&source=collection_link&creator=18429884"
+	},
+	"item": [
+		{
+			"name": "Number Four",
+			"item": [
+				{
+					"name": "Karyawan",
+					"item": [
+						{
+							"name": "Get",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/number_four/karyawan?id=2",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"number_four",
+										"karyawan"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nik\": \"3174041372\",\r\n    \"nama\": \"Yudha Romadhon\",\r\n    \"ttl\": \"1999-01-13\",\r\n    \"alamat\": \"Griya Salak Endah 2 Blok C4 Nomor 7\",\r\n    \"id_jabatan\": 1,\r\n    \"id_level\": 1,\r\n    \"id_dept\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/number_four/karyawan",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"number_four",
+										"karyawan"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id_karyawan\": 5,\r\n    \"nik\": \"3174041372\",\r\n    \"nama\": \"Yudha Romadhon\",\r\n    \"ttl\": \"1999-01-13\",\r\n    \"alamat\": \"Griya Salak Endah 2 Blok C4 Nomor 7\",\r\n    \"id_jabatan\": 1,\r\n    \"id_level\": 1,\r\n    \"id_dept\": 1\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/number_four/karyawan",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"number_four",
+										"karyawan"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/number_four/karyawan?id=5",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"number_four",
+										"karyawan"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "5"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Level",
+					"item": [
+						{
+							"name": "Get",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/number_four/level?id=2",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"number_four",
+										"level"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nama_level\": \"Sepuh\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/number_four/level",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"number_four",
+										"level"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id_level\": 7,\r\n    \"nama_level\": \"Primordial\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/number_four/level",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"number_four",
+										"level"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/number_four/level?id=7",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"number_four",
+										"level"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "7"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Jabatan",
+					"item": [
+						{
+							"name": "Get",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/number_four/jabatan?id=2",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"number_four",
+										"jabatan"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nama_jabatan\": \"Sepuh\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/number_four/jabatan",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"number_four",
+										"jabatan"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id_jabatan\": 9,\r\n    \"nama_jabatan\": \"Primordial\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/number_four/jabatan",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"number_four",
+										"jabatan"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/number_four/jabatan?id=9",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"number_four",
+										"jabatan"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "9"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				},
+				{
+					"name": "Department",
+					"item": [
+						{
+							"name": "Get",
+							"protocolProfileBehavior": {
+								"disableBodyPruning": true
+							},
+							"request": {
+								"method": "GET",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/number_four/department?id=2",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"number_four",
+										"department"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "2"
+										}
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Create",
+							"request": {
+								"method": "POST",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"nama_dept\": \"Sepuh\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/number_four/department",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"number_four",
+										"department"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Update",
+							"request": {
+								"method": "PUT",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "{\r\n    \"id_dept\": 4,\r\n    \"nama_dept\": \"Primordial\"\r\n}",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/number_four/department",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"number_four",
+										"department"
+									]
+								}
+							},
+							"response": []
+						},
+						{
+							"name": "Delete",
+							"request": {
+								"method": "DELETE",
+								"header": [],
+								"body": {
+									"mode": "raw",
+									"raw": "",
+									"options": {
+										"raw": {
+											"language": "json"
+										}
+									}
+								},
+								"url": {
+									"raw": "{{url}}/api/number_four/department?id=4",
+									"host": [
+										"{{url}}"
+									],
+									"path": [
+										"api",
+										"number_four",
+										"department"
+									],
+									"query": [
+										{
+											"key": "id",
+											"value": "4"
+										}
+									]
+								}
+							},
+							"response": []
+						}
+					]
+				}
+			]
+		},
+		{
+			"name": "Number One",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"type\": \"3\",\r\n    \"repetition\": \"5\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/number_one",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"number_one"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Number Two",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"number\": \"102512\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{url}}/api/number_two",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"api",
+						"number_two"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"event": [
+		{
+			"listen": "prerequest",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		},
+		{
+			"listen": "test",
+			"script": {
+				"type": "text/javascript",
+				"packages": {},
+				"exec": [
+					""
+				]
+			}
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "http://localhost",
+			"type": "string"
+		}
+	]
+}
